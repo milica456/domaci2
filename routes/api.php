@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-/*Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
@@ -25,4 +25,4 @@ Route::middleware('auth:sanctum')->group( function () {
     Route::resource('sektori', \App\Http\Controllers\SektorController::class);
     Route::resource('pozicije', \App\Http\Controllers\PozicijaController::class);
     Route::resource('zaposleni', \App\Http\Controllers\ZaposleniController::class);
-});*/
+});
